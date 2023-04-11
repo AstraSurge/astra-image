@@ -1,5 +1,5 @@
 {
-  "name": "image-color-reducer",
+  "name": "astra-image",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@radix-ui/react-slider": "^1.1.1",
+    "ahooks": "^3.7.6",
+    "clsx": "^1.2.1",
+    "image-q": "^4.0.0",
+    "jimp": "^0.22.7",
     "next": "^13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "experimental",
+    "react-dom": "experimental",
+    "react-icons": "^4.8.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -25,6 +31,7 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.36.0",
     "eslint-config-next": "^13.2.4",
+    "eslint-plugin-react-hooks": "experimental",
     "postcss": "^8.4.21",
     "prettier": "^2.8.6",
     "prettier-plugin-tailwindcss": "^0.2.6",

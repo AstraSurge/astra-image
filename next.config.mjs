@@ -18,5 +18,26 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  redirects: async () => {
+    return [
+      {
+        source: "/",
+        destination: "/image-color-reducer",
+        permanent: false
+      }
+    ]
+  },
+  transpilePackages: ["jimp"],
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      };
+    }
+
+    return config;
+  }
 };
 export default config;
