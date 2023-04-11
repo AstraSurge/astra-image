@@ -4,10 +4,23 @@ import { ImMail4 } from "react-icons/im";
 import Logo from "~/components/common/Logo";
 
 import "~/styles/globals.css";
+import Link from "next/link";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
+      <header className="flex items-center justify-between px-4 py-4">
+        <h1 className="text-xl  font-extrabold tracking-tight text-blue-950">
+          <Link href={"/"}>Astra Image</Link>
+        </h1>
+        <a
+          target="_blank"
+          href="https://github.com/AstraSurge/astra-image"
+          aria-label="Go to Astra Image's Github"
+        >
+          <RxGithubLogo className="text-xl text-blue-950" />
+        </a>
+      </header>
       <Component {...pageProps} />
       <footer className="flex flex-col items-center gap-2 bg-blue-50 px-4 py-8">
         <span className="inline-flex items-center gap-2 font-light text-slate-950">

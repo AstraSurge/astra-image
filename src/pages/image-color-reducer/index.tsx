@@ -5,8 +5,6 @@ import ImageUploader from "~/components/common/ImageUploader";
 import clsx from "clsx";
 import ColorCountSlider from "~/components/image-color-reducer/ColorCountSlider";
 import { useDebounceEffect } from "ahooks";
-import { RxGithubLogo } from "react-icons/rx";
-import Link from "next/link";
 
 export default function ImageColorReducer() {
   const [inputImage, setInputImage] = useState<string>();
@@ -45,21 +43,12 @@ export default function ImageColorReducer() {
     <>
       <Head>
         <title>Image Color Reducer</title>
-        <meta name="description" content="Discover Image Color Reducer, the ultimate user-friendly solution for enhancing your visuals by simplifying colors. Our advanced tool streamlines the image optimization process, delivering captivating results while reducing file size and maintaining outstanding quality. Ideal for designers, artists, and digital enthusiasts, Image Color Reducer is your go-to resource for achieving stunning images with fewer colors, faster load times, and an unforgettable browsing experience. Experience the magic of color reduction today!" />
+        <meta
+          name="description"
+          content="Discover Image Color Reducer, the ultimate user-friendly solution for enhancing your visuals by simplifying colors. Our advanced tool streamlines the image optimization process, delivering captivating results while reducing file size and maintaining outstanding quality. Ideal for designers, artists, and digital enthusiasts, Image Color Reducer is your go-to resource for achieving stunning images with fewer colors, faster load times, and an unforgettable browsing experience. Experience the magic of color reduction today!"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="flex items-center justify-between px-4 py-4">
-        <h1 className="text-xl  font-extrabold tracking-tight text-blue-950">
-          <Link href={"/"}>Astra Image</Link>
-        </h1>
-        <a
-          target="_blank"
-          href="https://github.com/AstraSurge/astra-image"
-          aria-label="Go to Astra Image's Github"
-        >
-          <RxGithubLogo className="text-xl text-blue-950" />
-        </a>
-      </header>
       <main className="min-h-screen w-full bg-gradient-to-br from-blue-900 to-violet-900 py-24">
         <div className=" container m-auto flex flex-col items-center justify-center gap-12 px-4">
           <section className="py-8 text-center xl:py-12">
