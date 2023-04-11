@@ -1,7 +1,9 @@
 # Astra Image
-A powerful and easy-to-use image processing web app.
+Astra Image is an open-source web app providing user-friendly image editing tools, with all processing occurring client-side for optimal privacy and security.
+
+![Astra Image Preview](https://rorsch-1256426089.file.myqcloud.com/public/202304110858493.webp)
 ## Introduction
-Astra Image is an open-source image processing web app, designed to provide users with various image editing and processing tools in a user-friendly interface.
+Astra Image is a open-source web application that offers an array of user-friendly image editing and processing tools. By performing all image processing tasks on the client-side, Astra Image ensures the utmost privacy and security for user data, eliminating privacy concerns.
 
 ## Getting Started
 To get started with Astra Image, you'll first need to clone the repository:
