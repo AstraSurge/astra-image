@@ -22,7 +22,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         </a>
       </header>
       <Component {...pageProps} />
-      <footer className="flex flex-col items-center gap-2 bg-blue-50 px-4 py-8">
+      <footer className="flex flex-col items-center gap-2 px-4 py-8">
         <span className="inline-flex items-center gap-2 font-light text-slate-950">
           <a
             aria-label="Astra Surge's Website"

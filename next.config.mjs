@@ -3,6 +3,11 @@
  * This is especially useful for Docker builds.
  */
 !process.env.SKIP_ENV_VALIDATION && (await import("./src/env.mjs"));
+import withPWAInit from "@ducanh2912/next-pwa";
+
+const withPWA = withPWAInit({
+  dest: "public",
+});
 
 /** @type {import("next").NextConfig} */
 const config = {
@@ -40,4 +45,4 @@ const config = {
     return config;
   }
 };
-export default config;
+export default withPWA(config);
