@@ -24,7 +24,7 @@ export default function ImageColorReducer() {
     () => {
       processImage(colorCount);
     },
-    [colorCount, processImage],
+    [colorCount],
     {
       wait: 400,
     }
