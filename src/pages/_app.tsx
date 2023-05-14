@@ -5,6 +5,7 @@ import Logo from "~/components/common/Logo";
 
 import "~/styles/globals.css";
 import Link from "next/link";
+import Script from "next/script";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
@@ -49,6 +50,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           </a>
         </div>
       </footer>
+      <Script id="icarus" data-domain="image.astrasurge.com" src="https://icarus.astrasurge.com/js/script.js" strategy="afterInteractive" />
     </>
   );
 };
